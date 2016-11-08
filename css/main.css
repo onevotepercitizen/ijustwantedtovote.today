@@ -389,3 +389,7 @@ header h1.title svg {
 .footer-container a, aside a {
   color: white;
 }
+
+input, textarea, select {
+  display: block;
+}
