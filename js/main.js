@@ -43,6 +43,11 @@ function initializeSurvey(){
     changeText('blocked_details-response', event.target.value);
   });
   form.elements.comments.addEventListener(eventHook, function(event){
+    if(event.target.value.length > 0){
+      document.getElementById('comments').className = 'comments';
+    } else {
+      document.getElementById('comments').className = 'not-included';
+    }
     changeText('comments', event.target.value);
   });
   form.elements.intimidation.addEventListener(eventHook, function(event){
