@@ -3,6 +3,8 @@ function initializeSurvey(){
   var eventHook = 'change';
   var form = document.getElementById('survey');
 
+  if(!form) return;
+
   var toggleNotIncluded = function(elementId, value) {
     if(value === 'yes') {
       document.getElementById(elementId).className = '';
