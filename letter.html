@@ -128,10 +128,14 @@
             <button onclick="window.print(); return false">Print your letter, previewed below.</button>
             <p><small>...or just print this page. It'll just print the letter!</small></p>
             <p>
-              While it's printing,
-              <a id="lookup-link" data-base-url="http://openstates.org/find_your_legislator/" href="http://openstates.org/find_your_legislator/">look up your state legislator</a>.
-              You should send your letter to at least one but preferably both. Click on their names
+              While it's printing, if your legislators' names and addresses
+               didn't populate in the letter below,
+              <a id="lookup-link"
+              data-base-url="http://openstates.org/find_your_legislator/"
+              href="http://openstates.org/find_your_legislator/"
+              >look up your state legislators on OpenStates</a>. Click on their names
               to see their office addresses. Send it to a district office or capitol office!
+              You should send your letter to at least one but preferably both.
             </p>
             <p>
               Once you have the address, write it on an envelope, fold the printed letter, put
@@ -141,6 +145,7 @@
           <section id="letter-template">
             <h2>This is your letter:</h2>
             <div id="letter" class="printable">
+              <p id="to-address" class="not-included"/>
               <p>8 November 2016</p>
               <p>Dear <span id="official-name">Legislator</span>:</p>
               <p>I write to inform you of my experience voting today at <span id="voting_location-response" class="voting-location">my precinct</span>.</p>
@@ -243,7 +248,9 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0HR1sUh4xiBllxQY20DSUezTsP0RxLOc&callback=geocodingAvailable">
+    </script>
     <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
         function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
