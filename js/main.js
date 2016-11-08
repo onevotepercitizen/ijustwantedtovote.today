@@ -22,6 +22,8 @@ function initializeSurvey(){
   });
   form.elements.address.addEventListener(eventHook, function(event){
     changeText('address-response', event.target.value);
+    var lookup_link = document.getElementById('lookup-link');
+    lookup_link.setAttribute("href", lookup_link.getAttribute("data-base-url") + "?q=" + event.target.value.replace("\n"," "));
   });
   form.elements.voting_location.addEventListener(eventHook, function(event){
     changeText('voting_location-response', event.target.value);

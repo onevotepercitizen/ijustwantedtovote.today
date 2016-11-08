@@ -125,11 +125,19 @@
 
             </form>
             </ul>
-            <button onclick="window.print(); return false">Print your letter</button>
+            <h2>What do I do now?</h2>
+            <button onclick="window.print(); return false">Print your letter, previewed below.</button>
+            <p><small>...or just print this page. It'll just print the letter!</small></p>
+            <p>
+              While it's printing,
+              <a id="lookup-link" data-base-url="http://openstates.org/find_your_legislator/" href="http://openstates.org/find_your_legislator/">look up your state legislator</a>.
+              You should send your letter to at least one but preferably both. Click on their names
+              to see their office addresses. Send it to a district office or capitol office!
+            </p>
           </section>
           <section id="letter-template">
             <h2>This is your letter:</h2>
-            <div id="letter" class="printable"
+            <div id="letter" class="printable">
 <p>8 November 2016</p>
 <p>Dear <span id="official-name">Elected Official</span>:</p>
 <p>I write to inform you of my experience voting today at <span id="voting_location-response" class="voting-location">my precinct</span>.</p>
