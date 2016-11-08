@@ -72,7 +72,7 @@
                 <input name="name" placeholder="E.g. John or Jane Doe"/>
               </div>
               <div>
-                <label for="address">What is your address?</label>
+                <label for="address" class="address">What is your address?</label>
                 <textarea name="address" placeholder="100 Main St.&#10;Citytown, ST&#10;00000&#10;&#10;and double check it!"></textarea>
               </div>
               <div>
@@ -93,7 +93,7 @@
                 </select>
               </div>
               <div>
-                <label for="intimidation">Did anyone try to convince or force you not to vote? Did you feel intimidated?</label>
+                <label for="intimidation" class="intimidation">Did anyone try to convince or force you not to vote? Did you feel intimidated?</label>
                 <select name="intimidation">
                   <option value="no">No</option>
                   <option value="yes">Yes</option>
@@ -101,11 +101,11 @@
               </div>
               <div>
               <div id="intimidation_expansion"/>
-                <label for="intimidation_details">Explain how you felt intimidated.</label>
+                <label for="intimidation_details" class="intimidation_details">Explain how you felt intimidated.</label>
                 <textarea name="intimidation_details" placeholder="Give as much factual detail as you can. This text will be included verbatim in your letter."></textarea>
               </div>
               <div>
-                <label for="blocked">Did anyone block your path into your voting facility?</label>
+                <label for="blocked" class="blocked">Did anyone block your path into your voting facility?</label>
                 <select name="blocked">
                   <option value="no">No</option>
                   <option value="yes">Yes</option>
@@ -113,7 +113,7 @@
               </div>
               <div>
               <div id="blocked_expansion">
-                <label for="blocked_details">Explain how you were blocked entering your facility.</label>
+                <label for="blocked_details" class="blocked_details">Explain how you were blocked entering your facility.</label>
                 <textarea name="blocked_details" placeholder="Give as much factual detail as you can. This text will be included verbatim in your letter."></textarea>
               </div>
               <div>
@@ -141,6 +141,11 @@
               Once you have the address, write it on an envelope, fold the printed letter, put
               it in the envelope, <strong>put a stamp on it</strong>, and mail it wherever you mail things!
             </p>
+            <p>
+              If you want to change a part of the letter, look for color and
+              find the question above with the same color. Change that response
+              and the letter will change!
+            </p>
           </section>
           <section id="letter-template">
             <h2>This is your letter:</h2>
@@ -148,29 +153,29 @@
               <p id="to-address" class="not-included"/>
               <p>8 November 2016</p>
               <p>Dear <span id="official-name">Legislator</span>:</p>
-              <p>I write to inform you of my experience voting today at <span id="voting_location-response" class="voting-location">my precinct</span>.</p>
+              <p>I write to inform you of my experience voting today at <span id="voting_location-response" class="voting_location">my precinct</span>.</p>
               <p>
-                I waited in line for <span id="wait_time-response" class="wait-time">a long time</span>.
+                I waited in line for <span id="wait_time-response" class="wait_time">a long time</span>.
                 This wait time was <span id="acceptable-response" class="acceptable">frustrating</span>.
               </p>
-              <p id="intimidation" class="not-included">
-                I felt intimitated while casting my vote. <span id="intimidation_details-response"></span>
+              <p id="intimidation" class="not-included" class="intimidation">
+                I felt intimitated while casting my vote. <span id="intimidation_details-response" class="intimidation_details"></span>
               </p>
-              <p id="blocked" class="not-included">
-                I was blocked from entering my voting facility. <span id="blocked_details-response"></span>
+              <p id="blocked" class="not-included" class="blocked">
+                I was blocked from entering my voting facility. <span id="blocked_details-response" class="blocked_details"></span>
               </p>
               <p>
                 I demand that you to take action to ensure that no voter is disenfranchised. Citizens' voices
                 <em>must</em> be heard and any legislator who prevents someone from casting their vote should
                 be removed from office. Any employer who prevents an employee from voting should be punished.
               </p>
-              <p id="comments"></p>
+              <p id="comments" class="comments"></p>
               <p>Sincerely,</p>
               <p></p>
               <p></p>
               <p></p>
-              <p><span id="name-response">A concerned voter</span></p>
-              <p><span id="address-response"></span></p>
+              <p><span id="name-response" class="name">A concerned voter</span></p>
+              <p><span id="address-response" class="address"></span></p>
             </div>
           </section>
           <footer>

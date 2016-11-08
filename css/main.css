@@ -405,3 +405,34 @@ h1 {
 .title {
   line-height: 1.5em;
 }
+
+.name {
+  background-color: #ffffdd;
+}
+.address {
+background-color: #ffddff;
+}
+.voting_location {
+background-color: #ddffff;
+}
+.wait_time {
+background-color: #eeeebb;
+}
+.acceptable {
+background-color: #eebbee;
+}
+.intimidation {
+background-color: #bbeeee;
+}
+.intimidation_details {
+background-color: #bbdddd;
+}
+.blocked {
+background-color: #cfcfcf;
+}
+.blocked_details {
+background-color: #cecece;
+}
+.comments {
+background-color: #eeeeee;
+}
