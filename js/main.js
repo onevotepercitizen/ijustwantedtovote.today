@@ -22,7 +22,7 @@ function initializeSurvey(){
   form.elements.name.addEventListener(eventHook, function(event){
     changeText('name-response', event.target.value);
   });
-  form.elements.address.addEventListener(eventHook, function(event){
+  form.elements['street-address'].addEventListener(eventHook, function(event){
     changeText('address-response', event.target.value);
     var lookup_link = document.getElementById('lookup-link');
     lookup_link.setAttribute("href", lookup_link.getAttribute("data-base-url") + "?q=" + event.target.value.replace("\n"," "));
@@ -111,7 +111,7 @@ function httpGetAsync(theUrl, callback)
 
 function geocodingAvailable(){
   window.geocoder = new google.maps.Geocoder();
-  document.getElementById('survey').elements.address.addEventListener('change', function(event) {
+  document.getElementById('survey').elements['street-address'].addEventListener('change', function(event) {
     window.geocoder.geocode( {'address': event.target.value }, function(results, status){
       if( status == 'OK') {
         var lat = results[0].geometry.location.lat();
