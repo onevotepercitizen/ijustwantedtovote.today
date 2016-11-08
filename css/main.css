@@ -393,7 +393,9 @@ header h1.title svg {
 input, textarea, select {
   display: block;
 }
-
+input {
+  width: 20em;
+}
 textarea {
   height: 5em;
 }
