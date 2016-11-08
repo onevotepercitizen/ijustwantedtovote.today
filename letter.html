@@ -1,0 +1,244 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>I just wanted to vote today</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/print.css" media="print" />
+
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="header-container">
+      <header class="wrapper clearfix">
+        <h1 class="title">I just wanted to vote today
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 7410 3900">
+          <rect width="7410" height="3900" fill="#b22234"/>
+          <path d="M0,450H7410m0,600H0m0,600H7410m0,600H0m0,600H7410m0,600H0" stroke="#fff" stroke-width="300"/>
+          <rect width="2964" height="2100" fill="#3c3b6e"/>
+            <g fill="#fff">
+            <g id="s18">
+              <g id="s9">
+              <g id="s5">
+              <g id="s4">
+              <path id="s" d="M247,90 317.534230,307.082039 132.873218,172.917961H361.126782L176.465770,307.082039z"/>
+              <use xlink:href="#s" y="420"/>
+              <use xlink:href="#s" y="840"/>
+              <use xlink:href="#s" y="1260"/>
+              </g>
+              <use xlink:href="#s" y="1680"/>
+              </g>
+              <use xlink:href="#s4" x="247" y="210"/>
+              </g>
+              <use xlink:href="#s9" x="494"/>
+              </g>
+              <use xlink:href="#s18" x="988"/>
+              <use xlink:href="#s9" x="1976"/>
+              <use xlink:href="#s5" x="2470"/>
+          </g>
+        </svg></h1>
+      </header>
+    </div>
+
+    <div class="main-container">
+      <div class="main wrapper clearfix">
+
+        <article>
+          <header>
+            <h1>Write your letter</h1>
+            <p>
+              This form will guide you through the process of writing your letter.
+              No answers written here are stored. This letter is generated entirely
+              in your browser.
+            </p>
+          </header>
+          <section class="survey">
+            <form id="survey">
+              <h2>First, some information about you:</h2>
+              <div>
+                <label name="name" class="name">What is your name?</label>
+                <input name="name" placeholder="E.g. John or Jane Doe"/>
+              </div>
+              <div>
+                <label for="address">What is your address?</label>
+                <textarea name="address" placeholder="For example:&#10;&#10;Johnny Appleseed&#10;100 Main St.&#10;Citytown, ST&#10;00000&#10;&#10;and double check it!"></textarea>
+              </div>
+              <div>
+                <label for="voting_location" class="voting_location">Where do <em>you</em> vote?</label>
+                <textarea name="voting_location"
+                  placeholder="Type a recognizable name, like 'Turner Elementary School', or the full address"></textarea>
+              </div>
+              <h2>What happened today?</h2>
+              <div>
+                <label for="wait_time" class="wait_time">How long did you wait in line before you had a ballot in front of you?</label>
+                <input name="wait_time" placeholder="Write something like '30 minutes' or 'more than 4 hours'."/>
+              </div>
+              <div>
+                <label for="acceptable" class="acceptable">Was this wait time acceptable?</label>
+                <select name="acceptable">
+                  <option value="acceptable">Yes</option>
+                  <option value="unacceptable">No</option>
+                </select>
+              </div>
+              <div>
+                <label for="intimidation">Did anyone try to convince or force you not to vote? Did you feel intimidated?</label>
+                <select name="intimidation">
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+              </div>
+              <div>
+              <div id="intimidation_expansion"/>
+                <label for="intimidation_details">Explain how you felt intimidated.</label>
+                <textarea name="intimidation_details" placeholder="Give as much factual detail as you can. This text will be included verbatim in your letter."></textarea>
+              </div>
+              <div>
+                <label for="blocked">Did anyone block your path into your voting facility?</label>
+                <select name="blocked">
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+              </div>
+              <div>
+              <div id="blocked_expansion">
+                <label for="blocked_details">Explain how you were blocked entering your facility.</label>
+                <textarea name="blocked_details" placeholder="Give as much factual detail as you can. This text will be included verbatim in your letter."></textarea>
+              </div>
+              <div>
+                <label for="comments" class="comments">Is there anything else that your officials should know?</label>
+                <textarea name="comments"
+                  placeholder="Other problems, such as 'I could not find parking' or 'I waited in the rain' or 'When will we have mail-in or electronic voting?'&#10;Anything written here will be included verbatim at the end of the letter."></textarea>
+              </div>
+
+            </form>
+            </ul>
+            <button onclick="window.print(); return false">Print your letter</button>
+          </section>
+          <section id="letter-template">
+            <h2>This is your letter:</h2>
+            <div id="letter" class="printable"
+<p>8 November 2016</p>
+<p>Dear <span id="official-name">Elected Official</span>:</p>
+<p>I write to inform you of my experience voting today at <span id="voting_location-response" class="voting-location">my precinct</span>.</p>
+<p>
+  I waited in line for <span id="wait_time-response" class="wait-time">a long time</span>.
+  This wait time was <span id="acceptable-response" class="acceptable">frustrating</span>.
+</p>
+<p id="intimidation" class="not-included">
+  I felt intimitated while casting my vote. <span id="intimidation_details-response"></span>
+</p>
+<p id="blocked" class="not-included">
+  I was blocked from entering my voting facility. <span id="blocked_details-response"></span>
+</p>
+<p>
+  I demand that you to take action to ensure that no voter is disenfranchised. Citizens' voices
+  <em>must</em> be heard and any legislator who prevents someone from casting their vote should
+  be removed from office. Any employer who prevents an employee from voting should be punished.
+</p>
+<p id="comments"></p>
+<p>Sincerely,</p>
+<p></p>
+<p></p>
+<p></p>
+<p><span id="name-response">A concerned voter</span></p>
+<p><span id="address-response"></span></p>
+          </section>
+          <footer>
+            <h2>Thank you</h2>
+            <p>
+              Your vote, regardless for whom it was cast, is vital to a functioning
+              democracy in our constitutional republic.
+            </p>
+            <p>
+              If you weren't able to vote, and if there is still time for you to
+              vote, <em>please try again</em> and do not let
+              anyone except a judge of elections or election constable stop you.
+              Demand and write down the names of the people who prevent you from
+              voting and call <a href="tel:1866OURVOTE">866-OUR-VOTE</a> to report it.
+              Remember, though, that many
+              states now require photographic identification.
+            </p>
+            <p>If you weren't able to vote, you were
+              <abbr title="prevented from voting">disenfranchised</abbr> and you
+              really should call <a href="tel:1866OURVOTE">866-OUR-VOTE</a> to report it in addition to sending
+              this letter. Read more on the ACLU's
+              <a href="https://www.aclu.org/know-your-rights/what-do-when-faced-voter-intimidation"
+              >What To Do When Faced With Voter Intimidation</a>.
+            </p>
+            <p>
+              The authors of this tool
+              have their political preferences, but feel strongly that any voter
+              who has been nearly or completely
+              <abbr title="prevented from voting">disenfranchised</abbr> must be
+              enabled to tell their elected officials about their problem.
+            </p>
+          </footer>
+        </article>
+
+        <aside>
+            <h3>Things to remember</h3>
+            <dl>
+              <dt>Be factual.</dt>
+              <dd>
+                <p>
+                  Do not lie. Do not exaggerate. Simply state what happened.
+                </p>
+              </dd>
+              <dt>Re-read anything you have written.</dt>
+              <dd>
+                <p>
+                  Sending something is better than nothing, but something short
+                  and grammatically correct is will give the best impression.
+                </p>
+              </dd>
+              <dt>Sign your letter.</dt>
+              <dd>
+                Your signature means that a person took the time to send this
+                letter. Use a blue pen or some other color for added effect.
+              </dd>
+            </dl>
+        </aside>
+
+      </div> <!-- #main -->
+    </div> <!-- #main-container -->
+
+    <div class="footer-container">
+        <footer class="wrapper">
+            <h3>
+              product of
+              <abbr title="You might not be ready for it, but your kids are gonna love it.">1&#9745;&#10140;&#128100;</abbr>
+            </h3>
+            <p>
+              <a href="https://github.com/onevotepercitizen/ijustwantedtovote.today/issues"
+              >report a problem or make this site better</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+  </body>
+</html>

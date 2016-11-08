@@ -1,0 +1,20 @@
+article header,
+#letter-template h2,
+section.survey,
+aside,
+footer {
+  display: none;
+}
+
+#letter {
+  border: none;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.header-container {
+  border-bottom: 1px solid black;
+}
+.footer-container {
+  border-top: 1px solid black;
+}
