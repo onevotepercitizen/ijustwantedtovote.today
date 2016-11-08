@@ -397,7 +397,9 @@ input, textarea, select {
 textarea {
   height: 5em;
 }
-
+h1 {
+  line-height: 1.5em;
+}
 .title {
-  line-height: 2.1em;
+  line-height: 1.5em;
 }
