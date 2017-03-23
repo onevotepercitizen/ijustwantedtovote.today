@@ -402,8 +402,22 @@ textarea {
 h1 {
   line-height: 1.5em;
 }
+
 .title {
   line-height: 1.5em;
+  font-size: 1.6em;
+}
+
+@media only screen and (min-width: 375px) {
+  .title {
+    font-size: 1.9em;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .title {
+    font-size: 2.0em;
+  }
 }
 
 .name {
